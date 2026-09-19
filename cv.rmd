@@ -50,7 +50,7 @@ Aside
 datadrivencv::build_network_logo(CV$entries_data)
 ```
 
-
+<!-- 
 ```{r}
 if(params$pdf_mode){
   cat("View this CV online with links at _daniel-alima3.github.io/cv/_")
@@ -58,8 +58,9 @@ if(params$pdf_mode){
   cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/daniel-alima3/cv/raw/master/dalima_cv.pdf)")
 }
 ```
+-->
 
-Contact {#contact}
+Contato {#contact}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -68,7 +69,7 @@ CV |> print_contact_info()
 
 
 
-Language Skills {#skills}
+Competências {#skills}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -80,11 +81,11 @@ CV |> print_skill_bars()
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+Criado com o pacote R [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/nstrayer/cv](https://github.com/daniel-alima3/cv).
+O código fonte utilizado pode ser encontrado [em github.com/nstrayer/cv](https://github.com/daniel-alima3/cv).
 
-Last updated on `r Sys.Date()`.
+Última atualização foi em `r Sys.Date()`.
 
 
 
@@ -101,7 +102,7 @@ CV <- print_text_block(CV, "intro")
 
 
 
-Education {data-icon=graduation-cap data-concise=true}
+Formação Acadêmica {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -109,35 +110,37 @@ CV <- print_section(CV, 'education')
 ```
 
 
-
+<!-- 
 Research Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV <- print_section(CV, 'research_positions')
 ```
+ -->
 
 
-
-Industry Experience {data-icon=suitcase}
+Experiência Profissional {data-icon=suitcase}
 --------------------------------------------------------------------------------
-
+<!-- 
 ::: aside
 ```{r}
 CV <- print_text_block(CV, 'industy_experience_aside')
 ```
 :::
+-->
 
 ```{r}
 CV <- print_section(CV, 'industry_positions')
 ```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
+<!-- 
 <br>
 <br>
-<br>
+<br> -->
 
-Teaching Experience {data-icon=chalkboard-teacher}
+<!-- Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -149,9 +152,9 @@ CV <- print_text_block(CV, 'teaching_experience_aside')
 ```{r}
 CV <- print_section(CV, 'teaching_positions')
 ```
+ -->
 
-
-
+<!-- 
 Selected Data Science Writing {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
@@ -164,9 +167,9 @@ CV <- print_text_block(CV, 'data_science_writing_aside')
 ```{r}
 CV <- print_section(CV, 'data_science_writings')
 ```
+ -->
 
-
-
+<!-- 
 Selected Press (About)  {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
@@ -185,19 +188,19 @@ Selected Press (By)  {data-icon=newspaper}
 ```{r}
 CV <- print_section(CV, 'by_me_press')
 ```
+ -->
 
-
-
+<!-- 
 Selected Publications, Posters, and Talks {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
 CV <- print_section(CV, 'academic_articles')
 ```
+ -->
 
 
-
-```{r}
+<!-- ```{r}
 print_links(CV)
-```
+``` -->
 
