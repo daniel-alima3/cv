@@ -217,7 +217,7 @@ style = \"background:linear-gradient(to right,
 >{skill}</div>"
   }
   cv$skills |>
-    dplyr::mutate(width_percent = round(100 * as.numeric(level) / out_of)) |>
+    dplyr::mutate(width_percent = round(100 * as.numeric(level))) |>
     glue::glue_data(glue_template) |>
     print()
 
