@@ -85,8 +85,6 @@ Criado com o pacote R [**pagedown**](https://github.com/rstudio/pagedown).
 
 O código fonte utilizado pode ser encontrado [em github.com/nstrayer/cv](https://github.com/daniel-alima3/cv).
 
-Última atualização foi em `r Sys.Date()`.
-
 
 
 Main
