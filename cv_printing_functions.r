@@ -108,7 +108,7 @@ create_CV_object <- function(data_location,
         no_start & no_end ~ "N/A",
         no_start & has_end ~ as.character(end),
         start_end_are_same ~ as.character(end),
-        has_start & no_end ~ paste("Corrente", "-", start),
+        has_start & no_end ~ paste("Atualmente", "-", start),
         TRUE ~ paste(end, "-", start)
       )
     ) |>
